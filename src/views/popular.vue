@@ -4,6 +4,7 @@
 
 <script>
 export default {
-  name: "popular"
+  name: "popular",
 };
 </script>
+<style lang="scss" scoped></style>

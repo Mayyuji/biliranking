@@ -32,9 +32,9 @@ export default {
   methods: {
     showPopup() {
       if (this.islogin) {
-        this.$router.push("/user");
+        this.$router.replace("/user");
       } else {
-        this.$router.push("/user");
+        this.$router.replace("/user");
       }
       // this.show = true;
     },
