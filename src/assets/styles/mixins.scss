@@ -1,0 +1,43 @@
+@mixin boder-bottom {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    color: #ededed;
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+@mixin astyle {
+  a:active,
+  a:hover,
+  a:link,
+  a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #333;
+  }
+}
+@mixin border($color, $radius) {
+  position: relative;
+  &::after {
+    content: ' ';
+    transform: scale(0.5);
+    position: absolute;
+    border: 1px solid $color;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border-radius: $radius;
+  }
+}
